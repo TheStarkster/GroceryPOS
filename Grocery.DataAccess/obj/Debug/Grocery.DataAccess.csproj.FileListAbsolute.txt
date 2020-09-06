@@ -1,0 +1,8 @@
+D:\GroceryTrackingSystem\GroceryTSystem\Grocery.DataAccess\bin\Debug\Grocery.DataAccess.dll.config
+D:\GroceryTrackingSystem\GroceryTSystem\Grocery.DataAccess\bin\Debug\Grocery.DataAccess.dll
+D:\GroceryTrackingSystem\GroceryTSystem\Grocery.DataAccess\bin\Debug\Grocery.DataAccess.pdb
+D:\GroceryTrackingSystem\GroceryTSystem\Grocery.DataAccess\obj\Debug\Grocery.DataAccess.csproj.CoreCompileInputs.cache
+D:\GroceryTrackingSystem\GroceryTSystem\Grocery.DataAccess\obj\Debug\Grocery.DataAccess.csproj.CopyComplete
+D:\GroceryTrackingSystem\GroceryTSystem\Grocery.DataAccess\obj\Debug\Grocery.DataAccess.dll
+D:\GroceryTrackingSystem\GroceryTSystem\Grocery.DataAccess\obj\Debug\Grocery.DataAccess.pdb
+D:\GroceryTrackingSystem\GroceryTSystem\Grocery.DataAccess\obj\Debug\Grocery.DataAccess.csprojAssemblyReference.cache

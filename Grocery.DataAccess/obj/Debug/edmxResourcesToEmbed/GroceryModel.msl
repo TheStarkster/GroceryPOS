@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GroceryModelStoreContainer" CdmEntityContainer="GroceryEntities">
+    <EntitySetMapping Name="branch_master">
+      <EntityTypeMapping TypeName="GroceryModel.branch_master">
+        <MappingFragment StoreEntitySet="branch_master">
+          <ScalarProperty Name="branchid" ColumnName="branchid" />
+          <ScalarProperty Name="branchname" ColumnName="branchname" />
+          <ScalarProperty Name="location" ColumnName="location" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="contactperson" ColumnName="contactperson" />
+          <ScalarProperty Name="trnNo" ColumnName="trnNo" />
+          <ScalarProperty Name="shopnameL1" ColumnName="shopnameL1" />
+          <ScalarProperty Name="shopnameL2" ColumnName="shopnameL2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_Branch" FunctionName="GroceryModel.Store.SP_Branch" />
+  </EntityContainerMapping>
+</Mapping>

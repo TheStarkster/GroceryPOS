@@ -1,0 +1,10 @@
+D:\GroceryTrackingSystem\GroceryTSystem\Grocery.BussinessLogic\bin\Debug\Grocery.BussinessLogic.dll
+D:\GroceryTrackingSystem\GroceryTSystem\Grocery.BussinessLogic\bin\Debug\Grocery.BussinessLogic.pdb
+D:\GroceryTrackingSystem\GroceryTSystem\Grocery.BussinessLogic\bin\Debug\Grocery.DataAccess.dll
+D:\GroceryTrackingSystem\GroceryTSystem\Grocery.BussinessLogic\bin\Debug\Grocery.DataAccess.pdb
+D:\GroceryTrackingSystem\GroceryTSystem\Grocery.BussinessLogic\bin\Debug\Grocery.DataAccess.dll.config
+D:\GroceryTrackingSystem\GroceryTSystem\Grocery.BussinessLogic\obj\Debug\Grocery.BussinessLogic.csprojAssemblyReference.cache
+D:\GroceryTrackingSystem\GroceryTSystem\Grocery.BussinessLogic\obj\Debug\Grocery.BussinessLogic.csproj.CoreCompileInputs.cache
+D:\GroceryTrackingSystem\GroceryTSystem\Grocery.BussinessLogic\obj\Debug\Grocery.BussinessLogic.csproj.CopyComplete
+D:\GroceryTrackingSystem\GroceryTSystem\Grocery.BussinessLogic\obj\Debug\Grocery.BussinessLogic.dll
+D:\GroceryTrackingSystem\GroceryTSystem\Grocery.BussinessLogic\obj\Debug\Grocery.BussinessLogic.pdb

@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="GroceryModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="branch_master">
+          <Key>
+            <PropertyRef Name="branchid" />
+          </Key>
+          <Property Name="branchid" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="branchname" Type="varchar" MaxLength="50" />
+          <Property Name="location" Type="varchar" MaxLength="100" />
+          <Property Name="Address" Type="varchar" MaxLength="200" />
+          <Property Name="contactperson" Type="varchar" MaxLength="25" />
+          <Property Name="trnNo" Type="varchar" MaxLength="20" />
+          <Property Name="shopnameL1" Type="varchar" MaxLength="100" />
+          <Property Name="shopnameL2" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <Function Name="SP_Branch" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ACTION" Type="int" Mode="In" />
+          <Parameter Name="id" Type="varchar" Mode="In" />
+          <Parameter Name="name" Type="varchar" Mode="In" />
+          <Parameter Name="loca" Type="varchar" Mode="In" />
+          <Parameter Name="addr" Type="varchar" Mode="In" />
+          <Parameter Name="cntct" Type="varchar" Mode="In" />
+          <Parameter Name="trno" Type="varchar" Mode="In" />
+          <Parameter Name="shopname" Type="varchar" Mode="In" />
+          <Parameter Name="shopnamenew" Type="varchar" Mode="In" />
+        </Function>
+        <EntityContainer Name="GroceryModelStoreContainer">
+          <EntitySet Name="branch_master" EntityType="Self.branch_master" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="GroceryModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="branch_master">
+          <Key>
+            <PropertyRef Name="branchid" />
+          </Key>
+          <Property Name="branchid" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="branchname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="location" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Address" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="contactperson" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="trnNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="shopnameL1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="shopnameL2" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="GroceryEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="branch_master" EntityType="Self.branch_master" />
+          <FunctionImport Name="SP_Branch">
+            <Parameter Name="ACTION" Mode="In" Type="Int32" />
+            <Parameter Name="id" Mode="In" Type="String" />
+            <Parameter Name="name" Mode="In" Type="String" />
+            <Parameter Name="loca" Mode="In" Type="String" />
+            <Parameter Name="addr" Mode="In" Type="String" />
+            <Parameter Name="cntct" Mode="In" Type="String" />
+            <Parameter Name="trno" Mode="In" Type="String" />
+            <Parameter Name="shopname" Mode="In" Type="String" />
+            <Parameter Name="shopnamenew" Mode="In" Type="String" />
+          </FunctionImport>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="GroceryModelStoreContainer" CdmEntityContainer="GroceryEntities">
+          <EntitySetMapping Name="branch_master">
+            <EntityTypeMapping TypeName="GroceryModel.branch_master">
+              <MappingFragment StoreEntitySet="branch_master">
+                <ScalarProperty Name="branchid" ColumnName="branchid" />
+                <ScalarProperty Name="branchname" ColumnName="branchname" />
+                <ScalarProperty Name="location" ColumnName="location" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="contactperson" ColumnName="contactperson" />
+                <ScalarProperty Name="trnNo" ColumnName="trnNo" />
+                <ScalarProperty Name="shopnameL1" ColumnName="shopnameL1" />
+                <ScalarProperty Name="shopnameL2" ColumnName="shopnameL2" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="SP_Branch" FunctionName="GroceryModel.Store.SP_Branch" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

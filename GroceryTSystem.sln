@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.62
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grocery.Cashier", "Grocery.Cashier\Grocery.Cashier.csproj", "{EB751CD2-1ACC-498A-88A6-2E884D43BCE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grocery.DataAccess", "Grocery.DataAccess\Grocery.DataAccess.csproj", "{5BCB8192-E42F-48AB-AB3B-6FE8A731A87C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grocery.BussinessLogic", "Grocery.BussinessLogic\Grocery.BussinessLogic.csproj", "{79E476D3-1D22-46F0-BCF5-E271BBC8D12A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grocery.Admin", "Grocery.Admin\Grocery.Admin.csproj", "{DB3BCABA-B230-42EC-8513-62689C64F225}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB751CD2-1ACC-498A-88A6-2E884D43BCE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB751CD2-1ACC-498A-88A6-2E884D43BCE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB751CD2-1ACC-498A-88A6-2E884D43BCE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB751CD2-1ACC-498A-88A6-2E884D43BCE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BCB8192-E42F-48AB-AB3B-6FE8A731A87C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BCB8192-E42F-48AB-AB3B-6FE8A731A87C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BCB8192-E42F-48AB-AB3B-6FE8A731A87C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BCB8192-E42F-48AB-AB3B-6FE8A731A87C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79E476D3-1D22-46F0-BCF5-E271BBC8D12A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79E476D3-1D22-46F0-BCF5-E271BBC8D12A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79E476D3-1D22-46F0-BCF5-E271BBC8D12A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79E476D3-1D22-46F0-BCF5-E271BBC8D12A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB3BCABA-B230-42EC-8513-62689C64F225}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB3BCABA-B230-42EC-8513-62689C64F225}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB3BCABA-B230-42EC-8513-62689C64F225}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB3BCABA-B230-42EC-8513-62689C64F225}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9683528F-A644-411E-BD03-E6BA916FF1D0}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/hkmaryam
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Grocery.Cashier\\Grocery.Cashier.csproj
+		SccProjectName1 = Grocery.Cashier
+		SccLocalPath1 = Grocery.Cashier
+		SccProjectUniqueName2 = Grocery.DataAccess\\Grocery.DataAccess.csproj
+		SccProjectName2 = Grocery.DataAccess
+		SccLocalPath2 = Grocery.DataAccess
+		SccProjectUniqueName3 = Grocery.BussinessLogic\\Grocery.BussinessLogic.csproj
+		SccProjectName3 = Grocery.BussinessLogic
+		SccLocalPath3 = Grocery.BussinessLogic
+		SccProjectUniqueName4 = Grocery.Admin\\Grocery.Admin.csproj
+		SccProjectName4 = Grocery.Admin
+		SccLocalPath4 = Grocery.Admin
+	EndGlobalSection
+EndGlobal
